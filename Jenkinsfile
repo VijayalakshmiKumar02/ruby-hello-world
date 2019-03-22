@@ -30,7 +30,7 @@ pipeline
             }
                 }
             }
-            stage('Create App'){
+            stage('Create Application'){
                 steps{
                     script{
                 openshift.withCluster() {
