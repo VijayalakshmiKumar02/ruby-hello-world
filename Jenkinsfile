@@ -35,7 +35,7 @@ pipeline
                     script{
                 openshift.withCluster() {
                     openshift.withProject() {
-                    def bc = openshift.newApp( 'https://github.com/VijayalakshmiKumar02/ruby-hello-world' ).narrow('bc')
+                    def bc = openshift.newApp( 'https://github.com/openshift/ruby-hello-world' ).narrow('bc')
 
     // The build config will create a new build object automatically, but how do
     // we find it? The 'related(kind)' operation can create an appropriate Selector for us.
