@@ -15,7 +15,7 @@ pipeline
             }
                 }
             }
-            stage('cleanup appliaction'){
+            stage('cleanup app'){
                 steps{
                     script{
                  openshift.withCluster() {
